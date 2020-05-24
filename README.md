@@ -29,3 +29,19 @@ And if have the cash to pay for Altium, I'd recommend that.
 
 Please go to this link on kitspace.org (adding link soon) to order a PCB and the
 BOM.
+
+## Developing software for the board
+Go to [SJSU-Dev2](https://github.com/kammce/SJSU-Dev2/) to download the software
+development kit for this board. The development platform also enables the
+development of other boards and microcontrollers as well.
+
+### Factory Testing board
+
+A `.hex` file can be generated for the board by building the
+[factory test demo](https://github.com/kammce/SJSU-Dev2/tree/master/demos/sjtwo/factory_test).
+
+This binary can be loaded onto each chip before it is soldered onto the board.
+And once the board is finished, power can be supplied to the board, and the 4
+LEDs above the buttons will turn on when the test is finished. Should only take
+a few seconds to complete. Serial output detailing the process can also be seen
+via a serial terminal like Putty or minicom over a USB micro cable.
